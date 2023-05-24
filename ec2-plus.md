@@ -218,6 +218,11 @@ There is `one log stream for each group for each instance` that needs management
 We can use parameter store to capture the configuration for the CW agent.
 
 ## Config Wizard
+Cloud-watch agent install:
+
+wget https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm
+
+rpm -U ./amazon-cloudwatch-agent.rpm
 
 Wizard is intitiated through CLI using
 
