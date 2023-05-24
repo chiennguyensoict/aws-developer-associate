@@ -84,16 +84,27 @@ Key facts
 # Credentials Precedence with CLI
 
 Credentials Precedence used by CLI in order to interact with AWS
+1. Command line options – Overrides settings in any other location, such as the --region, --output, and --profile parameters.
 
-- `Command line options` – Overrides settings in any other location. You can specify --region, --output, and --profile as parameters on the command line.
+2. Environment variables – You can store values in your system's environment variables.
 
-- `Environment variables` – You can store values in your system's environment variables.
+3. Assume role – Assume the permissions of an IAM role through configuration or the aws sts assume-role command.
 
-- `CLI credentials and config file` – The credentials and config file are updated when you run the command aws configure. The credentials file and config file is located at `~/.aws/credentials` and `~/.aws/config` respectively.
+4. Assume role with web identity – Assume the permissions of an IAM role using web identity through configuration or the aws sts assume-role command.
 
-- `Container credentials` – You can associate an IAM role with each of your Amazon Elastic Container Service (Amazon ECS) _task definitions_. Temporary credentials for that role are then available to that task's containers.
+5. AWS IAM Identity Center (successor to AWS Single Sign-On) – The IAM Identity Center credentials are stored in the config file and are updated when you run the aws configure sso command. The config file is located at ~/.aws/config on Linux or macOS, or at C:\Users\USERNAME\.aws\config on Windows.
 
-- `Instance profile credentials` – You can associate an IAM role with each of your Amazon Elastic Compute Cloud (Amazon EC2) instances. Temporary credentials for that role are then available to code running in the instance. The credentials are delivered through the Amazon EC2 metadata service.
+6. Credentials file – The credentials and config file are updated when you run the command aws configure. The credentials file is located at ~/.aws/credentials on Linux or macOS, or at C:\Users\USERNAME\.aws\credentials on Windows.
+
+7. Custom process – Get your credentials from an external source.
+
+8. Configuration file – The credentials and config file are updated when you run the command aws configure. The config file is located at ~/.aws/config on Linux or macOS, or at C:\Users\USERNAME\.aws\config on Windows.
+
+9. Amazon EC2 instance profile credentials – You can associate an IAM role with each of your Amazon Elastic Compute Cloud (Amazon EC2) instances. Temporary credentials for that role are then available to code running in the instance. The credentials are delivered through the Amazon EC2 metadata service. For more information, see IAM Roles for Amazon EC2 in the Amazon EC2 User Guide for Linux Instances and Using Instance Profiles in the IAM User Guide.
+
+10. Container credentials – You can associate an IAM role with each of your Amazon Elastic Container Service (Amazon ECS) task definitions. Temporary credentials for that role are then available to that task's containers. For more information, see IAM Roles for Tasks in the Amazon Elastic Container Service Developer Guide.
+
+
 
 ---
 
