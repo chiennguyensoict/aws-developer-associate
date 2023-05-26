@@ -1,5 +1,5 @@
 # Cloudfront
-
+![img](./imgs/cloud-front/CDN.PNG)
 ## Cloudfront Architecture
 
 CloudFront Distribution contains the configuration deployed to the edge locations
