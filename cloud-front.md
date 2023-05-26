@@ -187,13 +187,15 @@ Content that is PRIVATE needs to accessed via Signed URL or Signed Cookies.
 
 A single Cloudfront distribution behaviour is either PUBLIC or PRIVATE.
 
-### Cloudfront Key
+### Cloudfront Key (OLD)
 
 A Cloudfront Key is created by the AWS Account `Root User`.
 
 - Once a key exists in an account, that account can be added as a `TRUSTED SIGNER` in Cloudfront
 - After a `TRUSTED SIGNER` is added to a Cloudfront distribution, that distribution becomes a PRIVATE distribution
 - An application running on a compute service is required to generate Signed URL or Signed Cookies in this setup
+
+### Trusted Key Group(s)
 
 ### Signed URL and Signed Cookies
 
