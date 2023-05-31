@@ -388,7 +388,9 @@ When writing data to DAX, it can use write-through. Data is written to the datab
 - If data is being retrived from DyanamoDB during cache miss, it will be written to primary node of the cluster
 
 ---
+### DAX Considerations
 
+![img](./imgs/dynamo-db/DAX_Consider.PNG)
 ## DynamoDB Global Tables
 
 Global tables provide multi-master cross-region replication.
