@@ -240,7 +240,7 @@ Lambda functions need EC2 network permissions via the Execution Role.
 - Since the Lambda service needs to create network resources within the VPC, it needs permissions [what permissions?]
 
 ![img](./imgs/event-driven/Lambda3.webp)
-
+![img](./imgs/lambda/lambda_vpc.PNG)
 ---
 
 ## Classic Setup for Lambda VPC configuration
