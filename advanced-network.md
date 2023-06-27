@@ -15,7 +15,9 @@
 
 ### Interface-Endpoint
 
-![img](./imgs/advanced-network/interface-endpoint-text.PNG)
+![img](./imgs/advanced-network/Interface-endpoint-text.PNG)
+
+![img](./imgs/advanced-network/Interface-endpoint-text2.PNG)
 
 ![img](./imgs/advanced-network/interface-endpoint.PNG)
 
